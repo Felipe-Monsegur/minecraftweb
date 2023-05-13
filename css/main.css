@@ -3,39 +3,64 @@
     src: url('../assets/Minecraft.ttf');
   }
 
-
-body{
-    width: 100vw;
-    height: 100vw;
-    margin: 0;
-    font-family: 'Minecraft', Arial, sans-serif;
-
-    .conteiner{
-        width: 100%;
-        height: 100%;
-        scroll-snap-type: y mandatory;
-        overflow-y: scroll;
-    }
+/* ocultar scroll bar*/
+::-webkit-scrollbar {
+    display: none;
 }
 
-section{
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Minecraft', Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+
+main {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y proximity; */
+}
+
+main > section {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vw;
+    background: #8b6b42;
     scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
 
-    &:nth-of-type(1){
-        background-color: #8b6b42;
-        color: black;
-    }
-    &:nth-of-type(2){
-        background-color: #660000;
-        color: black;
-    }
-    &:nth-of-type(3){
-        background-color: #000000;
-        color: rgb(255, 255, 255);
-    }
+main > section:nth-child(2) {
+    background: #660000;
+}
+
+main > section:nth-child(3) {
+    background: #000000;
+}
+
+.OW{
+    font-size: 80px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.N{
+    font-size: 80px;
+    font-weight: 700;
+    color: #e75e03;
+}
+
+.E{
+    font-size: 80px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
 }
