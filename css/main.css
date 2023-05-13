@@ -24,7 +24,7 @@ header{
     align-items: center;
     position: absolute;
     background-color: rgb(46, 45, 45);
-    /*background-image: url(../assets/stoneblock\ oficial.png);*/
+    background-image: url(../assets/stoneblock\ oficial.png);
     background-size: 300px;
     width: 100vw;
     height: 70px;
@@ -67,12 +67,45 @@ main {
     /* scroll-snap-type: y proximity; */
 }
 
+
+
+ #section-1{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #3f9486;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+#section-2{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #660000;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+#section-3{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+/*
 main > section {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #335829;
+    background: #3f9486;
     scroll-snap-align: start;
     scroll-snap-stop: always;
 }
@@ -84,7 +117,7 @@ main > section:nth-child(2) {
 main > section:nth-child(3) {
     background: #000000;
 }
-
+*/
 .OW{
     font-size: 80px;
     font-weight: 700;
