@@ -5,20 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="icon" type="png" href="./assets/GrassBlock.png">
     <title>Minecraft Web</title>
 </head>
 <body>
     <header>
             <div class="MCLogo"><a href="index.html"><img class="MCLogoImg" src="./assets/Minecraft-Logo.png" alt="logo de instagram"></a></div>
-            <div>
+            <nav id="menu">
                 <ul class="Navbar">
-                 <li class="NavItem">
-                    <a class="NavImg" href="#section-1" rel="noopener noreferrer"><img class="NavImg"  src="./assets/GrassBlock.png" alt=""></a>
-                 </li>
-                 <li class="NavItem"><a href="#section-2" class="nav-link"><img class="NavImg" src="./assets/NetherrackBlock.png" alt=""></a></li>
-                 <li class="NavItem"><a href="#section-3" class="nav-link"><img class="NavImg" src="./assets/EndStoneBlock.png" alt=""></a></li>
-              </ul>
-            </div>
+                 <li class="NavItem" id="raise"><a class="NavImg" href="#section-1" rel="noopener noreferrer"><img class="NavImg"  src="./assets/GrassBlock.png" alt=""></a></li>
+                 <li class="NavItem" id="raise"><a href="#section-2" class="nav-link"><img class="NavImg" src="./assets/NetherrackBlock.png" alt=""></a></li>
+                 <li class="NavItem" id="raise"><a href="#section-3" class="nav-link"><img class="NavImg" src="./assets/EndStoneBlock.png" alt=""></a></li>
+                </ul>
+            </nav>
     </header> 
     <main>
         <section id="section-1">   
@@ -31,5 +30,6 @@
             <div class="E">End</div>
         </section>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
